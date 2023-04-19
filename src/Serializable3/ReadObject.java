@@ -1,4 +1,4 @@
-package Serializable;
+package Serializable3;
 
 import java.io.FileInputStream;
 
@@ -10,14 +10,13 @@ public class ReadObject {
         try {
             FileInputStream fis = new FileInputStream("C:\\Users\\Марго\\IdeaProjects\\Study_Project\\Content\\people.bin");
             ObjectInputStream ois = new ObjectInputStream(fis);
-            Person person1 = (Person) ois.readObject();
-            Person person2 = (Person) ois.readObject();
 
-            System.out.println(person1+"\n"+person2);
+            Person person = (Person) ois.readObject();
+            System.out.println(person);
             fis.close();
             ois.close();
         } catch (IOException e) {
-            System.out.println("Ошибка!");
+            throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
