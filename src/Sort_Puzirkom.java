@@ -1,6 +1,6 @@
 public class Sort_Puzirkom {
     public static void main(String[] args) {
-        int n = 1000;
+        int n = 100000;
         double[] arr = new double[n];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Math.random()*100;
