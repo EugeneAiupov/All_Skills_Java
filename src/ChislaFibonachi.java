@@ -1,6 +1,6 @@
 public class ChislaFibonachi {
     public static void main(String[] args) {
-        System.out.println(fibEffective(3));
+        System.out.println(fibEffective(100));
     }
 
     //медленный алгоритм через рекурсию, вычесление 100 числа фибоначи займет 50 тысяч лет
